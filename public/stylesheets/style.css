@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+header {
+  background-color:cornflowerblue;
+  padding: 30px;
+}
+
+header h1 {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+}
+
+main {
+  padding: 30px 33%;
+}
+
+.new-message-button {
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  background-color: cornflowerblue;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+article {
+  border: solid cornflowerblue 4px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px 40px;
+  background-color: white;
+}
+
+article.message > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+article.form input {
+  width: 100%;
+  display: block;
+  background-color: inherit;
+  border: solid lightgray 2px;
+  border-top: none;
+  padding: 6px 10px;
+  font-size: inherit;
+}
+
+article.form input:focus-visible {
+  outline: none;
+}
+
+article.form input:first-child {
+  border-top: solid lightgray 2px;
+  border-radius: 10px 10px 0 0;
+}
+
+article.form input:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+article.form button {
+  background-color: inherit;
+  border: none;
+  border-radius: 10px;
+  margin-top: 14px;
+  font-size: 20px;
+  padding: 6px 10px;
+  width: 100%;
+  color: white;
+  background-color: cornflowerblue;
+}

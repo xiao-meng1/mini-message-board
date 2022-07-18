@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <header>
+      <h1><%= title %></h1>
+    </header>
+    <main>
+      <article class="form">
+        <form method="POST" action="/new" id="new-user">
+          <input type="text" name="text" placeholder="Message" required>
+          <input type="text" name="user" placeholder="Username" required>
+        </form>
+        <button type="submit" form="new-user">Post</button>
+      </article>
+    </main>
+  </body>
+</html>
